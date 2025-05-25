@@ -1,7 +1,7 @@
 from turtle import Screen
 from food import Food
 from snake import Snake
-from scorebord import Scoreboard
+from scoreboard import Scoreboard
 from line import Line
 import time
 
@@ -40,7 +40,7 @@ while game_is_on:
         scoreboard.game_over()
 
     for segment in snake.segments[1:]:
-        if snake.head.distance(segment) < 10:
+        if snake.head.distance(segment) < 15:
             game_is_on = False
             time.sleep(1)
             scoreboard.game_over()
